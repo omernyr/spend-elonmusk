@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Products from "./components/Products";
+import Search from "./components/Search";
+import MainContext from "./MainContext";
+import { useState } from "react";
 function App() {
+
+
+  const [searchProd, setSearchProd] = useState('');
+  const [result, setResult] = useState([]);
+  const [getProducts, setGetProducts] = useState([]);
+  const [elonWorth, setElonWorth] = useState(218000000000);
+
+  const data = {
+    searchProd,
+    setSearchProd,
+    result,
+    setResult,
+    getProducts,
+    setGetProducts,
+    elonWorth,
+    setElonWorth
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainContext.Provider value={data}>
+      <div className="App">
+        <header>
+          <Header />
+          <Search />
+          <Products />
+          <Footer />
+        </header>
+      </div>
+    </MainContext.Provider>
   );
 }
 
