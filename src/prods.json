@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "Falcon9 Rocket",
+        "price": 67000000,
+        "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/11/copernicus_sentinel-6_lifts_off_on_a_spacex_falcon_9_rocket/22340698-1-eng-GB/Copernicus_Sentinel-6_lifts_off_on_a_SpaceX_Falcon_9_rocket_pillars.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Tesla RoadSter",
+        "price": 100000,
+        "img": "https://www.zastavki.com/pictures/originals/2019Funny_wallpapers_Red_car_Tesla_Roadster_flies_in_space_above_the_earth_138209_.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Rick's Portal Gun",
+        "price": 20000000000,
+        "img": "https://m.media-amazon.com/images/I/41I-BgHxo7L.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Instagram",
+        "price": 102000000000,
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+    },
+    {
+        "id": 5,
+        "title": "Oasis Luxury Class",
+        "price": 1200000000,
+        "img": "https://www.cruisehive.com/wp-content/uploads/2019/02/crystalserenity1.jpg"
+    },
+    {
+        "id": 6,
+        "title": "TOTO Egg",
+        "price": 20,
+        "img": "https://im.haberturk.com/2010/12/27/ver1293446920/585467_detay.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Sedef Stone Ring",
+        "price": 1000,
+        "img": "https://www.gumusbox.com/ozel-tasarim-sedef-tasli-siyah-zirkon-tas-islemeli-yuzuk-tasli-erkek-yuzuk-gumusbox-gb2382-4866-17-B.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Thanos's Glove",
+        "price": 67000000000,
+        "img": "https://ae01.alicdn.com/kf/HTB1dMyeuH1YBuNjSszeq6yblFXaK/1-1-Marvel-Avengers-Infinity-sava-Infinity-daya-LED-k-Thanos-eldiven-Cosplay-aksiyon-fig-r.jpg_Q90.jpg_.webp"
+    },
+    {
+        "id": 9,
+        "title": "iMAC 2022",
+        "price": 10000,
+        "img": "https://i.pcmag.com/imagery/articles/0141oab4nYsMiSt8Zx7xKEg-6..v1644530086.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Gum",
+        "price": 10,
+        "img": "https://onsbazaar.com/images/thumbs/0000483_ulker-yildiz-karbonatli-sekersiz-sakiz-80-adetlik-kutu_510.png"
+    },
+    {
+        "id": 11,
+        "title": "Ulker Dankek",
+        "price":12.65,
+        "img": "https://img-bizimtoptan.mncdn.com/Content/Images/Thumbs/1547953.png"
+    },
+    {
+        "id": 12,
+        "title": "GTA San Andreas Game",
+        "price": 273.99,
+        "img": "https://productimages.hepsiburada.net/s/9/375/8875266637874.jpg"
+    },
+    {
+        "id": 13,
+        "title": "The Hublot",
+        "price": 5000000,
+        "img": "https://cdn.wealthygorilla.com/wp-content/uploads/2022/07/Most-Expensive-Hublot-Watches-Big-Date-Power-Reserve-Indicator.jpg"
+    },
+    {
+        "id": 14,
+        "title": "San Sebastian",
+        "price": 99.99,
+        "img": "https://cdn.yemek.com/mnresize/940/940/uploads/2018/09/san-sebastian-site-buyuk.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Lahmacun",
+        "price": 19.99,
+        "img": "https://www.kevserinmutfagi.com/wp-content/uploads/2021/11/lahmacun1.jpg"
+    },
+    {
+        "id": 16,
+        "title": "Koç Company",
+        "price": 1320000000,
+        "img": "https://ilkha.com/files/news/default/koc-holding-neyin-tuccari1596029080.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Pringles",
+        "price": 99.99,
+        "img": "https://images.ofix.com/product-image/Pringles-Sade-Original-165_RI34221FT1MF260090.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Jimi Hendrix's Guitar",
+        "price": 1139900,
+        "img": "https://media.guitarcenter.com/is/image/MMGS7/J25966000001001-00-2000x2000.jpg"
+    },
+    {
+        "id": 19,
+        "title": "Hattori Hanzo",
+        "price": 49000,
+        "img": "https://pbs.twimg.com/media/DJRnva_XkAA5XrK.jpg"
+    },
+    {
+        "id": 20,
+        "title": "Onion",
+        "price": 48.25,
+        "img": "https://productimages.hepsiburada.net/s/44/375/10818919890994.jpg"
+    }
+]

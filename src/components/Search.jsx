@@ -1,22 +1,20 @@
 import React, { useEffect } from 'react';
 import MainContext from '../MainContext';
+import prods from "../prods.json"
 import { useContext } from 'react';
 const Search = () => {
 
-    const { searchProd, setSearchProd, result, setResult, getProducts, setGetProducts } = useContext(MainContext);
-
+    const { searchProd, setSearchProd, result, setResult, getProducts } = useContext(MainContext);
     const isTyping = searchProd.replace(/\s+/, '').length > 0;
 
     useEffect(() => {
         if (isTyping) {
             console.log("result", result);
-            setResult(getProducts.filter(item => item.title.toLowerCase().includes(searchProd.toLowerCase())))
+            setResult(prods.filter(item => item.title.toLowerCase().includes(searchProd.toLowerCase())))
         } else {
             setResult([])
         }
     }, [searchProd])
-
-
 
     return (
         <div className='search'>

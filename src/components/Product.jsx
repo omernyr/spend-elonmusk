@@ -1,17 +1,27 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { SlBasket, } from "react-icons/sl"
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai"
+import { AiOutlineHeart, AiOutlinePlusSquare, AiOutlineMinusSquare } from "react-icons/ai"
 import MainContext from "../MainContext";
+import prods from "../prods.json";
 const Product = () => {
 
-  const { getProducts, setGetProducts, result } = useContext(MainContext);
+  const { getProducts, setGetProducts, result, basket, setBasket, total, setTotal } = useContext(MainContext);
+
+  const buyProd = (prod) => {
+    setBasket([...basket, prod])
+
+  }
 
   useEffect(() => {
+    console.log(basket);
 
-    fetch('https://fakestoreapi.com/products')
-      .then(res => res.json())
-      .then((products) => setGetProducts(products))
-  }, []);
+    let t = 0;
+    basket.map((item) => {
+      t += (item.price)
+      setTotal(t.toFixed(2))
+    })
+    console.log("Total bu buuuu ", total);
+  }, [basket])
 
   return (
     <>
@@ -20,7 +30,7 @@ const Product = () => {
 
           <div className="product" key={prod.id}>
             <span>
-              <img className="product-img" src={`${prod.image}`} alt="" />
+              <img className="product-img" src={`${prod.img}`} alt="" />
             </span>
 
             <span className={`product-name ${prod.title.length}`}>
@@ -32,11 +42,11 @@ const Product = () => {
             </span>
 
             <div className="product-footer">
-              <button>
-                <SlBasket />
+              <button onClick={() => buyProd(prod)}>
+                <AiOutlinePlusSquare />
               </button>
               <button>
-                <AiOutlineHeart />
+                <AiOutlineMinusSquare />
               </button>
             </div>
 
@@ -44,11 +54,11 @@ const Product = () => {
 
           :
 
-          getProducts.map((prod) =>
+          prods.map((prod) =>
 
             <div className="product" key={prod.id}>
               <span>
-                <img className="product-img" src={`${prod.image}`} alt="" />
+                <img className="product-img" src={`${prod.img}`} alt="" />
               </span>
 
               <span className={`product-name`}>
@@ -60,15 +70,16 @@ const Product = () => {
               </span>
 
               <div className="product-footer">
-                <button>
-                  <SlBasket />
+                <button onClick={() => buyProd(prod)}>
+                  <AiOutlinePlusSquare />
                 </button>
                 <button>
-                  <AiOutlineHeart />
+                  <AiOutlineMinusSquare />
                 </button>
               </div>
 
-            </div>)}
+            </div>)
+      }
     </>
   )
 }

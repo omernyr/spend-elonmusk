@@ -10,7 +10,10 @@ function App() {
   const [searchProd, setSearchProd] = useState('');
   const [result, setResult] = useState([]);
   const [getProducts, setGetProducts] = useState([]);
-  const [elonWorth, setElonWorth] = useState(218000000000);
+  const [money, setMoney] = useState(218000000000);
+  const [darkTheme, setDarkTheme] = useState(false);
+  const [basket, setBasket] = useState([]);
+  const [total, setTotal] = useState(0);
 
   const data = {
     searchProd,
@@ -19,13 +22,20 @@ function App() {
     setResult,
     getProducts,
     setGetProducts,
-    elonWorth,
-    setElonWorth
+    money,
+    setMoney,
+    darkTheme,
+    setDarkTheme,
+    basket,
+    setBasket,
+    total,
+    setTotal,
+
   }
 
   return (
     <MainContext.Provider value={data}>
-      <div className="App">
+      <div className={`App ${darkTheme === true ? 'dark' : null} `}>
         <header>
           <Header />
           <Search />

@@ -12,8 +12,6 @@ code {
     monospace;
 }
 
-
-
 html,
 body {
   margin: 0;
@@ -22,16 +20,43 @@ body {
 }
 
 .App {
-  height: 100vh;
   display: flex;
   justify-content: center;
   flex: 1;
+  transition: 0.3s;
+}
+
+.dark {
+  transition: 0.3s;
+  background-color: rgb(45, 44, 44);
+  color: #f8f8f8;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  button {
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+
+    .moonBtn {
+      background-color: #b1c1e1;
+      padding: 0.4em;
+      border-radius: 50%;
+      transition: 0.5s;
+      width: 30px;
+      height: 30px;
+      color: rgb(255, 191, 62);
+
+      &:hover {
+        background-color: #f1c1e1;
+        color: rgb(223, 113, 101);
+      }
+    }
+  }
 
   h1 {
     line-height: 0;
@@ -83,6 +108,7 @@ header {
   color: darkslategray;
   font-weight: 600;
 }
+
 .search-error {
   background-color: rgb(255, 144, 144);
   width: 70%;
@@ -93,6 +119,7 @@ header {
   font-weight: 500;
   color: #f8f8f8;
 }
+
 .isHidden {
   visibility: hidden;
 }
@@ -111,10 +138,10 @@ header {
 }
 
 .product {
+  box-shadow: 1px 3px 10px 0px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
   padding: 0.3em;
   border: 1px solid salmon;
   margin: 1em;
@@ -124,7 +151,6 @@ header {
     width: 70px;
     height: 70px;
     object-fit: cover;
-
   }
 
   .product-name {
@@ -149,7 +175,33 @@ header {
       background-color: transparent;
       border: none;
       cursor: pointer;
+
+      svg {
+        color: greenyellow;
+        width: 25px;
+        height: 25px;
+      }
+
     }
   }
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+
+  svg {
+    margin: 1em;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+
+    &:hover {
+      color: greenyellow;
+      width: 70px;
+      height: 70px;
+      rotate: calc(25deg)
+    }
+  }
+
+}
