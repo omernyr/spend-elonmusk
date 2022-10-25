@@ -1,5 +1,4 @@
 import { useContext, useEffect } from "react";
-import { SlBasket, } from "react-icons/sl"
 import { AiOutlineHeart, AiOutlinePlusSquare, AiOutlineMinusSquare } from "react-icons/ai"
 import MainContext from "../MainContext";
 import prods from "../prods.json";

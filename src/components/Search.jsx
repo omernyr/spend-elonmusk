@@ -4,7 +4,7 @@ import prods from "../prods.json"
 import { useContext } from 'react';
 const Search = () => {
 
-    const { searchProd, setSearchProd, result, setResult, getProducts } = useContext(MainContext);
+    const { searchProd, setSearchProd, result, setResult } = useContext(MainContext);
     const isTyping = searchProd.replace(/\s+/, '').length > 0;
 
     useEffect(() => {
@@ -19,8 +19,6 @@ const Search = () => {
     return (
         <div className='search'>
             <input onChange={(e) => setSearchProd(e.target.value)} className='search-bar' type="text" placeholder='Please search anything to spend' />
-            {result.length === 0 && (<span className={`search-error ${result != 0 ? 'isHidden' : ""}`}> '{searchProd}' ile ilgili bir şey bulamadık 😕 </span>)}
-
         </div>
     )
 }
