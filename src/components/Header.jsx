@@ -35,7 +35,7 @@ const Header = () => {
                 <img className='elon-img' src="https://static01.nyt.com/images/2022/04/26/magazine/26Mag-Musk-01/26Mag-Musk-01-videoSixteenByNineJumbo1600-v6.jpg" alt="" />
             </span>
             <h2>
-                ${elonWorth}
+                ${elonWorth <= 0 ? '0' : elonWorth}
             </h2>
         </header>
     )

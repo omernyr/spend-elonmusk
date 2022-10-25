@@ -5,10 +5,11 @@ import MainContext from "../MainContext";
 import prods from "../prods.json";
 const Product = () => {
 
-  const { getProducts, setGetProducts, result, basket, setBasket, total, setTotal } = useContext(MainContext);
+  const { result, basket, setBasket, total, setTotal } = useContext(MainContext);
 
   const buyProd = (prod) => {
     setBasket([...basket, prod])
+    localStorage.setItem("ürünlerim", JSON.stringify(basket))
 
   }
 
