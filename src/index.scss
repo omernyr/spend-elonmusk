@@ -108,22 +108,6 @@ header {
   color: darkslategray;
   font-weight: 600;
 }
-
-.search-error {
-  background-color: rgb(255, 144, 144);
-  width: 70%;
-  padding: 0.5em 2em;
-  margin-top: 0.3em;
-  border-radius: 2.5em;
-  font-size: 21px;
-  font-weight: 500;
-  color: #f8f8f8;
-}
-
-.isHidden {
-  visibility: hidden;
-}
-
 .products {
   width: 90%;
   border: 2px solid greenyellow;
@@ -136,7 +120,6 @@ header {
   border-radius: 0.67em;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
 .product {
   box-shadow: 1px 3px 10px 0px rgb(0, 0, 0);
   display: flex;
